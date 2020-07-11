@@ -1,0 +1,14 @@
+number = input("Please enter a numeric valid : ");
+armstrong_number = 0
+
+if number.isdigit():
+  for i in number:
+    armstrong_number += int(i) ** len(number)
+  if armstrong_number == int(number):
+    print(number, " is an Armstrong number")
+  else:
+    print(number, " is not an Armstrong number")
+else:
+  print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
+
+
