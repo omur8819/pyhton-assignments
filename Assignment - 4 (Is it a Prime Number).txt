@@ -1,0 +1,9 @@
+number=int(input("Please enter a number : "))
+count = False
+for i in range(2, number+1):
+  if number%i == 0 and number != i:
+    count = True
+    break
+  else:
+    count = False
+print(number, "is", count*"not", "a prime number")
