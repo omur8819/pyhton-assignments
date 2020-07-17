@@ -1,0 +1,16 @@
+n = int(input("Enter a number for Prime Number list : "))
+prime_number_list = []
+count = False
+if n > 1:
+  for i in range(2, n+1):
+    for ii in range(2, i+1):
+      if i % ii == 0 and i != ii:
+        count = False
+        break
+      else:
+        count = True
+    if count == True:
+      prime_number_list.append(i)
+  print(prime_number_list)
+else:
+  print(n, "is not a positive number")
