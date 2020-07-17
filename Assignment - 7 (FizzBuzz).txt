@@ -1,0 +1,5 @@
+def FizzBuzz(numbers):
+  for i in numbers:
+    print(i, end=" ")
+numbers = [("FizzBuzz" if x % 15 == 0 else x and "Fizz" if x % 3 == 0 else x and "Buzz" if x % 5 == 0 else x) for x in range(1, 101)]
+FizzBuzz(numbers)
