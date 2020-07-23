@@ -1,0 +1,5 @@
+string="hippo runs to us!"
+x=dict(x)
+for i in string:
+    x.setdefault(i,str(string.count(i)))
+print(x)
