@@ -1,0 +1,9 @@
+def leap_year (year):
+    if year%4==0 and year%100!=0:
+        return "\b"
+    elif year%100==0 and year%400==0:
+        return "\b"
+    else:
+        return "not"
+n=int(input("Enter a year"))
+print(f"{n} is {leap_year(n)} a leap year.")
