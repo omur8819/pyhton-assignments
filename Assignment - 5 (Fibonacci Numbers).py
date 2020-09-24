@@ -10,5 +10,4 @@ def fibonacci(number):
         return nth_fibonacci
 
 entered_number = int(input("Please enter a positive integer number : "))
-nth_fibo = fibonacci(entered_number)
-print("The {} th fibonacci number in fibonacci serie is {}".format(entered_number, nth_fibo))
+print("The {} th fibonacci number in fibonacci serie is {}".format(entered_number, fibonacci(entered_number)))
